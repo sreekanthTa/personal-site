@@ -58,7 +58,7 @@ export default function Page({ params }: any) {
   <div className={styles.commandOptions}>
     <strong>Options:</strong>
     <ul>
-      {cmd.options.map((opt, i) => (
+      {cmd.options.map((opt:any, i:any) => (
         <li key={i}>
           <strong>{opt.option}:</strong> {opt.description}
         </li>
